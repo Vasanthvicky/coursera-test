@@ -8,14 +8,9 @@
         $scope.name ="";
         $scope.totalValue = 0;
 
-        $scope.displayNumeric = fuction () {
-            var totalNameValue = 0;//get the total value
-            $scope.totalValue = totalNameValue;
-        };
-
         $scope.displayNumeric = function () {
             var totalNameValue = 
-            calculatNumericForString($scope.namek);
+            calculatNumericForString($scope.name);
             //get the total value
             $scope.totalValue = totalNameValue;
         }
