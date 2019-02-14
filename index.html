@@ -1,12 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myFirstApp">
     <head>
         <meta charset="utf-8">
-        <title>Hellow Coursera</title>
+        <script src="angular.min.js"></script>
+        <script src="app.js"></script>
+        <title>Name Calculator</title>
+        <style>
+            body {
+                font-size: 1.3em;
+            }
+        </style>
     </head>
     <body>
         <h1>
-            Hellow Coursera Students, I am thrilled about this courses!
+            Name Calculator
         </h1>
+        <div ng-controller="NameCalculatorController">
+            <div>
+                Your Name:
+                <input type="text" 
+                ng-module="name"
+                ng-keyup="displayNumeric();">
+            </div>
+            <div>
+                Total Numeric Value of Person's name is:
+                {{totalValue}}
+            </div>
+            <!-- {{name}}
+            {{sayHello()}}
+            <input type="texg" ng-model="name">
+            inside my input is: {{name}} -->
+        </div>
     </body>
 </html>
